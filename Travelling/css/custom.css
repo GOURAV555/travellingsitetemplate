@@ -1,0 +1,449 @@
+ body {
+ 	margin: 0;
+ }
+
+ .navbar-brand {
+ 	color: white!important;
+ 	font-size: 20px;
+ 	background-color: red;
+ 	padding: 12px 41px;
+ 	display: block;
+ }
+
+ .shop {
+ 	border: 11px solid black;
+ 	color: white;
+ 	background-color: black;
+ 	margin-right: 7px;
+ 	border-radius: 9px;
+ 	padding: 3px 21px;
+ 	text-decoration: none !important;
+ }
+
+ .shop a {
+ 	display: inline-block;
+ 	font-size: 14px;
+ 	color: #fff;
+ 	letter-spacing: 1px;
+ }
+
+ .sign {
+ 	color: black;
+ 	border: 2px solid gray!important;
+ 	padding: 10px 15px;
+ 	margin-right: 12px;
+ }
+
+ .search {
+ 	background: black;
+ 	padding: 12px;
+ 	color: white;
+ }
+
+ .ind {
+ 	padding: 19px 0px;
+ 	border-radius: 24px;
+ }
+
+ .sum {
+ 	margin-top: 72px;
+ }
+
+ .about_detail {
+ 	width: 100px;
+ 	height: 350px !important;
+ 	background-color: grey;
+ 	padding: 40px 50px;
+ 	font-size: 22px;
+ 	color: white;
+ 	background: black;
+ }
+
+ .about_detail1 {
+ 	width: 100px;
+ 	height: 350px !important;
+ 	background-color: grey;
+ 	padding: 40px 50px;
+ 	font-size: 22px;
+ 	color: white;
+ 	background: black;
+ }
+
+ .about_img {
+ 	padding: 40px 40px;
+ 	min-height: 350px;
+ 	left: 0%;
+ 	top: 203%;
+ 	z-index: 1;
+ 	margin-bottom: 112px;
+ }
+
+ .about_img1 {
+ 	padding: 40px 40px;
+ 	min-height: 350px;
+ 	left: -7%;
+ 	top: 203%;
+ 	z-index: 1;
+ }
+
+ .div-center {
+ 	width: 80%;
+ 	margin: auto;
+ }
+
+ .sum p {
+ 	margin-bottom: 80px;
+ 	font-weight: normal;
+ }
+
+ .bl {
+ 	background-color: #1d1c1c;
+ 	color: white;
+ 	margin-bottom: 1px;
+ 	padding: 7em 0;
+ }
+
+ .bl-center h1 {
+ 	text-align: center;
+ 	font-size: 80px;
+ }
+
+ .bl_1 span {
+ 	border: 3px solid white;
+ 	padding: 38px 41px;
+ 	border-radius: 71px;
+ 	font-size: 29px;
+ }
+
+ .bl_1 h1 {
+ 	font-size: 33px;
+ 	margin-top: 14px;
+ }
+
+ .bl_0 {
+ 	margin-top: 70px;
+ }
+
+ .bl_1 p {
+ 	color: gray;
+ 	font-weight: normal;
+ }
+
+ .cc {
+ 	margin-top: 230px;
+ 	margin-left: -77px;
+ 	top: 0px;
+ }
+
+ .cc h1 {
+ 	font-size: 4em;
+ 	font-weight: 700;
+ 	letter-spacing: 1px;
+ 	text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.42);
+ 	margin-left: 5%;
+ 	text-align: left;
+ }
+
+ .cc h2 {
+ 	font-size: 4em;
+ 	font-weight: 700;
+ 	letter-spacing: 1px;
+ 	text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.42);
+ 	margin-right: 37%;
+ }
+
+ .cc p {
+ 	font-size: 0.9em;
+ 	letter-spacing: 10px;
+ 	font-weight: 400;
+ 	color: #ddd;
+ 	margin: 1em 0 2em 0;
+ 	margin-right: 53%;
+ }
+
+ .gallery {
+ 	background-color: #313131;
+ 	padding: 7em 0;
+ }
+
+ .gallery h1 {
+ 	color: #fff;
+ 	margin: auto;
+ 	font-weight: bolder;
+ 	font-size: 70px;
+ 	letter-spacing: 6px;
+ 	margin-bottom: 41px;
+ }
+
+ .gallery img {
+ 	width: 100%;
+ }
+
+ .col-sm-3, .col-sm-6 {
+ 	padding: 0px;
+ }
+
+ .Pricing {
+ 	padding: 112px 0px;
+ 	background: #292929;
+ }
+
+ .Pricing h1 {
+ 	color: white;
+ 	margin: auto;
+ 	font-weight: bolder;
+ 	font-size: 60px;
+ 	letter-spacing: 6px;
+ 	margin-bottom: 150px;
+ }
+
+ .pricing_top {
+ 	background-color: black;
+ 	text-align: center;
+ 	padding: 15px;
+ 	margin-bottom: -9px;
+ 	color: white;
+ }
+
+ .pricing_top h2 {
+ 	font-weight: 100px;
+ }
+
+ .pricing_top p {
+ 	margin: 16px 0 0 0;
+ 	font-size: 14px;
+ }
+
+ .pricing_top span {
+ 	font-size: 48px;
+ 	font-weight: 600;
+ 	color: white !important;
+ }
+
+ .pricing_bottom {
+ 	color: black;
+ 	text-align: center;
+ 	background-color: white;
+ 	padding: 18% 12%;
+ }
+
+ .pricing_bottom p {
+ 	font-size: 28px;
+ 	font-weight: 50;
+ }
+
+ .pricing_sign {
+ 	margin-top: 50px;
+ }
+
+ .pricing_sign a {
+ 	padding: 13px 24px;
+ 	background: black;
+ 	color: white !important;
+ }
+
+ .people {
+ 	color: black;
+ 	margin-top: 32px;
+ 	margin-bottom: 5%;
+ }
+
+ .people h3 {
+ 	margin-left: 13%;
+ 	font-weight: 600;
+ 	font-size: 63px;
+ 	margin-bottom: 60px;
+ }
+
+ .people h1 {
+ 	color: red;
+ 	margin-top: 19%
+ }
+
+ .col-md-4.inner {
+ 	margin-top: -90px;
+ }
+
+ inner.active {
+ 	background: #d01b1bb8 !important;
+ }
+
+ .people img {
+ 	border: 10px solid white;
+ 	width: 100%;
+ }
+
+ .block {
+ 	margin: auto;
+ }
+
+ .owl-nav {
+ 	margin-top: 29px;
+ 	font-size: 91px;
+ 	font-weight: 600;
+ 	color: gray;
+ 	margin-top: 10px;
+ 	position: relative;
+ 	top: -4em;
+ 	left: -1em;
+ }
+
+ .people p {
+ 	font-weight: 100;
+ }
+
+ .owl-dots {
+ 	position: absolute;
+ 	top: 19em;
+ }
+
+ .owl-nav button {
+ 	outline: none;
+ }
+
+ .owlmain {
+ 	margin-bottom: -69px;
+ }
+
+ button.owl-dot {
+ 	outline: none;
+ }
+
+ .footer {
+ 	padding: 4em 0 3em;
+ 	background: #1d1c1c;
+ 	color: #70fff2a1;
+ }
+
+ .footer p {
+ 	font-weight: normal;
+ }
+
+ .footer ul {
+ 	list-style: none;
+ 	padding: 0px;
+ }
+
+ .list_icons {
+ 	display: inline-flex;
+ 	letter-spacing: 16px;
+ }
+
+ .list_icons i {
+ 	color: white;
+ }
+
+ .list_it {
+ 	margin-top: 12px;
+ }
+
+ .list_it input {
+ 	text-align: center;
+ }
+
+ .gg {
+ 	background-color: red;
+ 	border: none;
+ 	color: white;
+ }
+
+ .copy_right {
+ 	border-top: 1px solid white;
+ 	margin-top: 38px;
+ }
+
+ .copy_right p {
+ 	text-align: center;
+ 	margin-top: 40px;
+ 	letter-spacing: 2px;
+ 	padding-top: 13px;
+ }
+
+ .copy_right span {
+ 	color: red;
+ }
+
+ .col-md-3.list_item {
+ 	font-weight: 400
+ }
+
+ a:hover {
+ 	color: #f60b0e!important;
+ }
+
+ span:hover {
+ 	color: #f60b0e;
+ }
+
+ .pricing_top:hover {
+ 	background-color: red;
+ }
+
+ .Pricing .col-md-4:hover .pricing_top, .Pricing .col-md-4:hover a, .Pricing .inner .pricing_top, .Pricing .inner a {
+ 	background-color: red;
+ 	color: white !important;
+ 	text-decoration: none;
+ }
+
+ .Pricing .col-md-4:hover:not(:nth-child(2)) {
+ 	transform: scale(1.1);
+ 	transition: 1s;
+ }
+
+ .gg:hover {
+ 	border: 2px solid #212121;
+ 	background: #151414;
+ }
+
+ .owl-theme .owl-nav [class*=owl-]:hover {
+ 	background: transparent;
+ 	color: red;
+ }
+
+ .owl-dot.active {
+ 	background: transparent !important;
+ 	border: 2px solid red !important;
+ 	margin: 0px !important;
+ 	border-radius: 50%;
+ }
+
+ .owl-dot.active span {
+ 	background: transparent !important;
+ }
+
+ .owl-dot span {
+ 	margin: 0px !important;
+ }
+
+ .owl-dot, .owl-dot.active {
+ 	margin-right: 10px !important;
+ }
+
+ li.ind {
+ 	position: relative;
+ 	top: -10em;
+ 	left: -25em;
+ }
+
+ .role1 {
+ 	position: absolute;
+ 	overflow: hidden !important;
+ }
+
+ .role_action1 {
+ 	background-color: #ffad4778;
+ 	position: absolute;
+ 	bottom: -46px;
+ 	text-align: center;
+ 	width: 285px;
+ 	transition: 10s;
+ }
+
+ .role_action1 h2 {
+ 	margin: 0;
+ }
+
+ .role1:hover .role_action1 {
+ 	bottom: 0;
+ 	transition: 1s;
+ }
