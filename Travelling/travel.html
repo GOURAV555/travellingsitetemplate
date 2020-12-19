@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travelling</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/travel.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body>
+    <div class="scrollTop" onclick="scrollToTop();"></div>
+    <div id="abc" class="container-fluid header ">
+        <div class="col-md-4">
+            <nav class="navbar navbar-light bg-light">
+                <div class="overlay-hny">
+                    <div class="side-menu-hny">
+                        <a class="navbar-brand" href="#">
+                            <i class="fa fa-search" aria-hidden="true" onclick="openNav()"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-header">
+                    <div id="myNav" class="overlay-menu">
+                        <label for="op" class="manuclose" onclick="closeNav()"></label>
+                        <div class="overlay-content">
+                            <nav class="menu-side-over-left">
+                                <h6 class="Search-text">Where do you want to go...</h6>
+                                <form class="menu-form" action="#" method="POST">
+                                    <input class="serch" type="search" name="search" placeholder="Search Here..">
+                                    <button type="submit" class="menu-btn">Search</button>
+                                </form>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <a class="navbar-brand" href="travel.html">Travelling</a>
+
+            </nav>
+        </div>
+        <div class="col-md-8 ">
+            <nav class="navbar navbar-expand-sm bg-transparent navbar-light">
+                <ul class=" nav navbar-nav">
+                    <li class="active">
+                        <a href="travel.html" class="alink">Home</a>
+                    </li>
+                    <li class="active"><a href="about.html" class="alink">About</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu first">
+                            <li><a href="pages.html" class="alink">Service</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Team Member</a></li>
+                            <li><a href="#">Timeline</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Coming Soon</a></li>
+                            <li><a href="#">404</a></li>
+                            <li><a href="#">Search Results</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Signup</a></li>
+                            <li><a href="#">Single Page</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Portfolio Single </a></li>
+                            <li><a href="#">Email amplet</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="alink">Blog</a></li>
+                            <li><a href="#" class="alink">Blog Single</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="alink">Ecommerce</a></li>
+                            <li><a href="#" class="alink">Ecommerce Single</a></li>
+                            <li><a href="#" class="alink">Ecommerce Chat</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="alink">Contact</a></li>
+                    <li><a class="book" href="#">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--Mob header Start-->
+    <div class="mymobheader">
+        <div class="mobheader">
+            <div class="mobheader-search">
+                <a class="navbar-brand" href="travel.html">Travelling</a>
+            </div>
+
+            <div class="mobheader-icon">
+                <i class="fa fa-bars" aria-hidden="true" onclick="menuToggle()"></i>
+            </div>
+        </div>
+
+        <div class="mobheader-cont">
+            <div id="menu" class="mobheader-menu">
+                <div class="mobcrossicon"><i onclick="menuCross()" class="fa fa-times" aria-hidden="true"></i></div>
+                <div class="mobheader-items h"><a href="travel.html" style="text-decoration: none;">Home</a></div>
+                <div class="mobheader-items a">About</div>
+                <div onclick="droptoggle()" class="mobheader-items" id="dop1">Pages +
+                    <div class="dropcont" id="doo1">
+                        <div class="dropdown-item">Service</div>
+                        <div class="dropdown-item">Pricing</div>
+                        <div class="dropdown-item">Gallery</div>
+                        <div class="dropdown-item">Team</div>
+                        <div class="dropdown-item">Team Member</div>
+                        <div class="dropdown-item">Timeline</div>
+                        <div class="dropdown-item">Faq</div>
+                        <div class="dropdown-item">Cooming Soon</div>
+                        <div class="dropdown-item">404</div>
+                        <div class="dropdown-item">Search Results</div>
+                        <div class="dropdown-item">Login</div>
+                        <div class="dropdown-item">Signup</div>
+                        <div class="dropdown-item">Single Page</div>
+                        <div class="dropdown-item">Portfolio</div>
+                        <div class="dropdown-item">Portfolio Single</div>
+                        <div class="dropdown-item">Email templets</div>
+                    </div>
+                </div>
+                <div onclick="droptoggle()" class="mobheader-items" id="dop2" >Blog +
+                    <div class="dropcont" id="doo2">
+                        <div class="dropdown-item">Blog</div>
+                        <div class="dropdown-item">Blog Single</div>
+                    </div>
+                </div>
+                <div onclick="droptoggle()" class="mobheader-items" id="dop3">Shop +
+                    <div class="dropcont"  id="doo3">
+                        <div class="dropdown-item">Ecommerce</div>
+                        <div class="dropdown-item">Ecommerce Single</div>
+                        <div class="dropdown-item">Ecommerce Chat</div>
+
+                    </div>
+                </div>
+                <div onclick="droptoggle()" class="mobheader-items" >Contact
+
+                </div>
+                <div onclick="droptoggle()" class="mobheader-items">Book Now
+
+                </div>
+            </div>
+        </div>
+        <script>
+            function menuToggle() {
+                var mymenu = document.getElementById("menu");
+                if (mymenu.style.display == "block") {
+                    mymenu.style.display = "none";
+                }
+                else {
+                    mymenu.style.display = "block";
+                }
+
+            }
+
+            function menuCross() {
+                var mymenu = document.getElementById("menu");
+                mymenu.style.display = "none";
+            }
+
+            // function droptoggle() {
+            //     var a = document.getElementById('demo1');
+            //     console.log(aindexOf('mobheader-items'));
+            //     // var mymenu = document.querySelectorAll('.mobheader-items');
+            //     // console.log(mymenu.classname)
+            //     // if (mymenu.style == "block"){
+            //     //     mymenu.style == "none";
+            //     // }
+            //     // else{
+            //     //     mymenu.style == "block";
+            //     // }
+
+            // }
+        </script>
+    </div>
+
+    <!--Mob header End-->
+    <div class="container-fluid" style="padding: 0;">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/Tulips.jpg" alt="Los Angeles" style="width:100vw;">
+                    <div class="carousel-caption">
+                        <h6 class="item-h">JOURNEY</h6>
+                        <h3>Exploring The World</h3>
+                        <p>Once aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur
+                            consectetur adipiscing elit.</p>
+                        <a href="#" class="btn">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/ba2.jpg" alt="Chicago" style="width:100vw;">
+                    <div class="carousel-caption">
+                        <h6 class="item-h">GREAT EXPERIENCE</h6>
+                        <h3>For Traveling Anywhere</h3>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est
+                            laborum mollit anim id est.</p>
+                        <a href="#" class="btn">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/ba3.jpg" alt="New York" style="width:100vw;">
+                    <div class="carousel-caption">
+                        <h6 class="item-h">ENJOY</h6>
+                        <h3>Your Dream Vacation</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium sunt
+                            in
+                            culpa qui laborum.</p>
+                        <a href="#" class="btn">Learn more</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/ba4.jpg" alt="Washington, D.C." style="width:100vw;">
+                    <div class="carousel-caption">
+                        <h6 class="item-h">WHAT NEXT COUNTRY?</h6>
+                        <h3>Discover Night Francisco</h3>
+                        <p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                            vitae dicta
+                            sunt explicabo.</p>
+                        <a href="#" class="btn">Learn more</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- form -->
+    <form class="formin">
+        <div class="container">
+            <div class="form-row ">
+                <h4><b> Get the Best Holiday Planned by Experts!
+                        <a href="tel" style="float: right;">Tel: +1-800-999-800</b></a></h4>
+                <div class="myformcon">
+                    <div class="form-group col-lg-2 ">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="form-group col-lg-2">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+
+                    <div class="form-group col-lg-2">
+                        <input type="text" class="form-control" placeholder="Mobile Number">
+                    </div>
+                    <div class="form-group col-lg-2">
+                        <select id="inputState" class="form-control">
+                            <option selected>Aug 2019</option>
+                            <option>Nov 2019</option>
+                            <option>Dec 2019</option>
+                            <option>Jan 2020</option>
+                            <option>Feb 2020</option>
+                            <option>Mar 2020</option>
+                            <option>Apr 2020</option>
+                            <option>May 2020</option>
+                            <option>June 2020</option>
+                            <option>Jul 2020</option>
+                            <option>Aug 2020</option>
+                            <option>Sep 2020</option>
+                            <option>Oct 2020</option>
+                            <option>Nov 2020</option>
+                            <option>Dec 2020</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2">
+                        <button type="submit" class="btn-lg btn-danger">Submit</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="form-group col-lg-12 form-desc">
+                    <p>By submitting this form, you authorize Travel and its partners to contact you for
+                        this enquiry.</p>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="container-fluid down">
+        <h1 class="head"><b>Popular Destination</b></h1>
+        <p class="para-sub">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#">
+                    <img class="img-responsive" src="images/grid1.jpg" alt="image">
+                </a>
+                <a href="#">
+                    <h1>Paris</h1>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <img class="img-responsive" src="images/grid2.jpg" alt="image">
+                </a>
+                <a href="#">
+                    <h1>Thailand</h1>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <img class="img-responsive" src="images/grid3.jpg" alt="image">
+                </a>
+                <a href="#">
+                    <h1>Greece</h1>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <img class="img-responsive" src="images/grid1.jpg" alt="image">
+                </a>
+                <a href="#">
+                    <h1>Spain</h1>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <img class="img-responsive" src="images/grid2.jpg" alt="image">
+                </a>
+                <a href="#">
+                    <h1>China </h1>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <img class="img-responsive" src="images/grid3.jpg" alt="image">
+                </a>
+                <a href="#">
+                    <h1>Iceland</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid iwall">
+        <div class=after>
+            <div class="papper">
+                <div class="papercenter">
+                    <h1>Buy a Tour Without Leaving Your Home</h1>
+                    <div id="para-sub">
+                        <p>Using our website, you can easily find and book any tour you want. Mobile users will
+                            definitely enjoy our
+                            app
+                            available on all devices.</p>
+                    </div>
+                    <div><a href="#">Book Now</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid action">
+        <div class="row-exp">
+            <div class="col-md-6">
+                <img src="../Travelling/images/a1.jpg" class="img-responsive">
+            </div>
+            <div class="col-md-6">
+                <h1 class="action-head">Explore A Different Way To Travel</h1>
+                <p class="action-para">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    doloremque
+                    laudantium, totam
+                    rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                <a class="action-a" href="">Learn more</a>
+                <a href="">Explore</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid feature">
+        <div class="main">
+            <div class="col-md-4">
+                <i class="fa fa-plane ic" aria-hidden="true"></i>
+                <h1>Air Tickets</h1>
+                <p>In such lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiud tempor.</p>
+                <a style="color:red !important" href="#">Read More</a>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-thumbs-up ic" aria-hidden="true"></i>
+                <h1>Tourist Guide</h1>
+                <p>Ncididunt ut labore et dolore magna minim veniam, quis nostrud exercitation ullamco.</p>
+                <a style="color:red !important" href="#">Read More</a>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-bed ic" aria-hidden="true"></i>
+                <h1>Hotel Bookings</h1>
+                <p>Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <a style="color:red !important" href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid fo">
+        <div class="focus">
+            <div class="confi">
+                <div class="column">
+
+                    <a href=""><img src="images/package1.jpg" alt="" class="img-responsive"></a>
+                    <hr>
+                    <h4><a href="" style="color: black !important;">Italy, Venice</a></h4>
+                    <p>starting at $45,99</p>
+                    <div class="star">
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star-o" aria-hidden="true"></span>
+                        <span>4.0(76)</span>
+                    </div>
+                </div>
+                <div class="column">
+                    <a href=""><img src="images/package2.jpg" alt="" class="img-responsive"></a>
+                    <hr>
+                    <h4><a href="" style="color: black !important;">Paris, France</a></h4>
+                    <p>starting at $40,99</p>
+                    <div class="star">
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star-o" aria-hidden="true"></span>
+                        <span>4.0(47)</span>
+                    </div>
+                </div>
+                <div class="column">
+                    <a href=""><img src="images/package3.jpg" alt="" class="img-responsive"></a>
+                    <hr>
+                    <h4><a href="" style="color: black !important;">Italy, Venice</a></h4>
+                    <p>starting at $24,99</p>
+                    <div class="star">
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star-o" aria-hidden="true"></span>
+                        <span>4.0(112)</span>
+                    </div>
+                </div>
+                <div class="column">
+                    <a href=""><img src="images/package4.jpg" alt="" class="img-responsive"></a>
+                    <hr>
+                    <h4><a href="" style="color: black !important;">Italy, Venice</a></h4>
+                    <p>starting at $19,99</p>
+                    <div class="star">
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star-o" aria-hidden="true"></span>
+                        <span>4.0(32)</span>
+                    </div>
+                </div>
+                <div class="column">
+                    <a href=""><img src="images/package5.jpg" alt="" class="img-responsive"></a>
+                    <hr>
+                    <h4><a href="" style="color: black !important;">Italy, Venice</a></h4>
+                    <p>starting at $39,99</p>
+                    <div class="star">
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star-o" aria-hidden="true"></span>
+                        <span>4.0(146)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bl">
+        <div class="row-bl">
+            <div class="flex">
+                <div class="col-md-4 bl">
+                    <h2 class="grid">36</h2>
+                    <p class="para-po">countries</p>
+                </div>
+                <div class="col-md-4 bl">
+                    <div class="bot-mid">
+                        <h2 class="grid">15 Years</h2>
+                        <p class="para-po">of Experience</p>
+                    </div>
+                </div>
+                <div class="col-md-4 bl">
+                    <h2 class="grid">950</h2>
+                    <p class="para-po">Airlines</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid team">
+        <div class="row-exp">
+            <h1 class="head-team"><b>Our Wonderful Team</b></h1>
+            <p class="para-team">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea
+                commodo consequat.</p>
+            <div class="col-md-3">
+                <div class="team-main">
+                    <a href="#"><img src="images/team1.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="right-team">
+                    <h6 class="head-rt">Chris Tina</h6>
+                    <p class="para-rt">Tour Guide</p>
+                    <div class="button-team">
+                        <a href=""><span class="fa-stack fa-lg">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x"></i>
+                            </span></a>
+                        <a href=""><span class="fa-stack fa-lg">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x"></i>
+                            </span></a>
+                        <a href=""><span class="fa-stack fa-lg ">
+                                <i class="fa fa-square-o fa-stack-2x text-danger "></i>
+                                <i class="fa fa-google-plus fa-stack-1x text-light "></i>
+                            </span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="team-main">
+                    <a href="#"><img src="images/team2.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="right-team">
+                    <h6 class="head-rt">Chris Tina</h6>
+                    <p class="para-rt">Tour Guide</p>
+                    <div class="button-team">
+                        <a href=""><span class="fa-stack fa-lg">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x"></i>
+                            </span></a>
+                        <a href=""><span class="fa-stack fa-lg">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x"></i>
+                            </span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="team-main">
+                    <a href="#"><img src="images/team3.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="right-team">
+                    <h6 class="head-rt">Chris Tina</h6>
+                    <p class="para-rt">Tour Guide</p>
+                    <div class="button-team">
+                        <a href=""><span class="fa-stack fa-lg">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x"></i>
+                            </span></a>
+                        <a href=""><span class="fa-stack fa-lg ">
+                                <i class="fa fa-square-o fa-stack-2x text-danger "></i>
+                                <i class="fa fa-google-plus fa-stack-1x text-light "></i>
+                            </span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="team-main">
+                    <a href="#"><img src="images/team4.jpg" alt="" class="img-responsive"></a>
+                </div>
+                <div class="right-team">
+                    <h6 class="head-rt">Chris Tina</h6>
+                    <p class="para-rt">Tour Guide</p>
+                    <div class="button-team">
+                        <a href=""><span class="fa-stack fa-lg">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x"></i>
+                            </span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid costo">
+        <div class="row-exp">
+            <h1 class="head-costo"><b>Clients Says</b></h1>
+            <div class="col-md-4 casto-top">
+                <div class="costo-gir">
+                    <p class="para-costo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque
+                        laudantium, t quasi
+                        beatae vitae dicta sunt explicabo.
+                    </p>
+                    <div class="but-costo">
+                        <div class="img-costo">
+                            <img src="images/testi1.jpg" alt="" class="img img-responsive">
+                        </div>
+                        <div class="costo-ub">
+                            <h5 class="had-costo">Cha Jiun</h5>
+                            <span class="costo-sp">Regular Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 casto-top">
+                <div class="costo-gir">
+                    <p class="para-costo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque
+                        laudantium, t quasi
+                        beatae vitae dicta sunt explicabo.
+                    </p>
+                    <div class="but-costo">
+                        <div class="img-costo">
+                            <img src="images/testi2.jpg" alt="" class="img img-responsive">
+                        </div>
+                        <div class="costo-ub">
+                            <h5 class="had-costo">Henry Itondo</h5>
+                            <span class="costo-sp">Regular Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 casto-top">
+                <div class="costo-gir">
+                    <p class="para-costo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque
+                        laudantium, t quasi
+                        beatae vitae dicta sunt explicabo.
+                    </p>
+                    <div class="but-costo">
+                        <div class="img-costo">
+                            <img src="images/testi3.jpg" alt="" class="img img-responsive">
+                        </div>
+                        <div class="costo-ub">
+                            <h5 class="had-costo">Fua Lamba</h5>
+                            <span class="costo-sp">Regular Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container-fluid footer">
+            <div class="row-exp">
+                <div class="col-md-2">
+                    <h2 class="footer-he">Travelling</h2>
+                    <p class="footer-para">All rights reserved.<b class="ball">
+                            ©2019 W3layouts</b></p>
+                </div>
+                <div class="col-md-2">
+                    <h3 class="footer-head "> About</h3>
+                    <ul class="footer-ul">
+                        <li><a href="" class="linkK">FAQs</a></li>
+                        <li><a href="" class="linkK">About Us</a></li>
+                        <li><a href="" class="linkK">Services</a></li>
+                        <li><a href="" class="linkK">Travel Guides</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3 class="footer-head">Pages</h3>
+                    <ul class="footer-ul">
+                        <li><a href="" class="linkK">Products</a></li>
+                        <li><a href="" class="linkK">Blog Page</a></li>
+                        <li><a href="" class="linkK">Contact Us</a></li>
+                        <li><a href="" class="linkK">Login</a></li>
+                        <li><a href="" class="linkK">Signup</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3 class="footer-head">Explore</h3>
+                    <ul class="footer-ul">
+                        <li><a href="" class="linkK">Support Center</a></li>
+                        <li><a href="" class="linkK">Terms & Conditions</a></li>
+                        <li><a href="" class="linkK">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="footer-head">Subscribe</h3>
+                    <form action="#" class="Subscribe" method="POST">
+                        <input class="em" type="email" name="email" placeholder="placeholder" required>
+                        <button class="paper"><span class="fa fa-paper-plane" aria-hidden="true"></span></button>
+                    </form>
+                    <p class="para-foot">Subscribe to our mailing list and get updates to your email inbox.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- scrollTop funtion in javascript & animation -->
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var scroll = document.querySelector('.scrollTop');
+            scroll.classList.toggle("active", window.scrollY > 500)
+        })
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            })
+        }
+
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+
+        function opensearch(){
+            $(document).ready(function(){
+                $('.overlay-hny').click(function(){
+                    $('.mobsearch').toggle();
+                })
+            })
+            
+        }
+
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#dop1").click(function(){
+                $("#doo1").toggle();
+            })
+            $("#dop2").click(function(){
+                $("#doo2").toggle();
+          
+            })
+            $("#dop3").click(function(){
+                $("#doo3").toggle();
+          
+            })
+        });
+    </script>
+
+</body>
+
+</html>
